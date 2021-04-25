@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "857400496248",
+    "project_id": "dailydish-f2340",
+    "storage_bucket": "dailydish-f2340.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857400496248:android:d18847e45ed236dfa91d8d",
+        "android_client_info": {
+          "package_name": "com.reactive.dailydish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857400496248-drvn6s3anqj3nhvo0sr8sas85fc3ms66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChx15oyPCXPXTVZzF7lGeq8s4Do5tSP8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857400496248-drvn6s3anqj3nhvo0sr8sas85fc3ms66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

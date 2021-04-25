@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <import type="android.view.View"/>
+
+
+        <variable
+            name="data"
+            type="com.reactive.dailydish.model.Menu" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="3dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/card"
+            app:cardElevation="5dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/user"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/userImage"
+                    app:civ_border_color="@color/purple_500"
+                    app:civ_border_width="@dimen/_2sdp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:text="Chef Name"
+                    app:layout_constraintStart_toEndOf="@id/userImage"
+                    app:layout_constraintTop_toTopOf="@id/userImage"
+                    app:layout_constraintBottom_toBottomOf="@id/userImage"
+                    android:id="@+id/chefname"
+                    />
+
+
+
+                <ImageView
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/food"
+                    android:scaleType="fitXY"
+                    android:id="@+id/image"
+                    app:layout_constraintTop_toBottomOf="@id/userImage"
+                    app:layout_constraintStart_toStartOf="@id/userImage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{data.name}"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    app:layout_constraintTop_toBottomOf="@id/image"
+                    app:layout_constraintStart_toStartOf="@id/userImage"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/name"
+                    android:layout_marginStart="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="@{data.price}"
+                    app:layout_constraintTop_toTopOf="@id/name"
+                    app:layout_constraintBottom_toBottomOf="@id/name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/price"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/discount"
+                    android:text="@{data.discount}"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toTopOf="@id/price"
+                    app:layout_constraintBottom_toBottomOf="@id/price"
+                    app:layout_constraintStart_toEndOf="@id/price"
+                    android:layout_marginStart="10dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{data.offers}"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/name"
+                    android:textColor="@color/black"
+                    android:id="@+id/offer"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/price"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/button_cart"
+                    android:text="Add To Cart"
+                    android:textSize="@dimen/_8sdp"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

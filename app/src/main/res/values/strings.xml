@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DailyDish</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="customer">CUSTOMER</string>
+    <string name="already_have_account_log_in">Already have account? Log In</string>
+    <string name="name">Name</string>
+    <string name="password">password</string>
+    <string name="register">Register</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="kitchen_dashboard">Kitchen Dashboard</string>
+    <string name="sale">Sale</string>
+    <string name="add_image">Add Image</string>
+    <string name="menu">Menu</string>
+    <string name="offerMessage">Offer Not Available</string>
+    <string name="update">Update</string>
+    <string name="profile">Profile</string>
+</resources>
